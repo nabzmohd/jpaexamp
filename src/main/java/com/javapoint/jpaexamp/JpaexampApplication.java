@@ -3,7 +3,7 @@ package com.javapoint.jpaexamp;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-
+// auther updated
 @SpringBootApplication
 public class JpaexampApplication {
 
