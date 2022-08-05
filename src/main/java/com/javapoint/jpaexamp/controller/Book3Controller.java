@@ -9,6 +9,7 @@ import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.domain.Sort.Direction;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -106,6 +107,12 @@ public class Book3Controller {
 		return ResponseEntity.ok(updatebook3);
 
 	}
+	
+	
+	
+	
+	
+	
 
 	@DeleteMapping("/book3/{id}")
 	public Map<String, Boolean> deleteEmployee(@PathVariable(value = "id") Long bookId)

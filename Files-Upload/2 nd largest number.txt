@@ -1,0 +1,25 @@
+3 - find second largest number
+ANS - import java.util.ArrayList;
+import java.util.Collections;
+public class Main{
+    public static void main (String[] args) {
+        ArrayList<Integer> a = new ArrayList<Integer>();
+        a.add(20);
+     a.add(56);
+     a.add(25);
+     a.add(65);
+     a.add(10);
+     System.out.println("unorderd list: "+a);
+    Collections.sort(a);
+    System.out.println("after orderd: " +a);
+    System.out.println(a.size());
+    System.out.println(a.get(3));
+    }
+}
+
+
+out 
+unorderd list[20,56,25,65,10]
+after orderd[10,20,25,56,65]
+5
+56

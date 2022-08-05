@@ -18,7 +18,7 @@ public class Car {
 	@NotBlank(message  ="carname required")
 	private String carname;
 	@NotBlank(message  ="carprice required")
-	private String carprice;
+	private Integer carprice;
 	@NotBlank(message  ="carmodel required")
 	private String carmodel;
 	private Integer year;
@@ -29,7 +29,7 @@ public class Car {
 	}
 	public Car(Long id, @NotBlank(message = "company required") String company,
 			@NotBlank(message = "carname required") String carname,
-			@NotBlank(message = "carprice required") String carprice,
+			@NotBlank(message = "carprice required") Integer carprice,
 			@NotBlank(message = "carmodel required") String carmodel, Integer year) {
 		super();
 		this.id = id;
@@ -57,10 +57,10 @@ public class Car {
 	public void setCarname(String carname) {
 		this.carname = carname;
 	}
-	public String getCarprice() {
+	public Integer getCarprice() {
 		return carprice;
 	}
-	public void setCarprice(String carprice) {
+	public void setCarprice(Integer carprice) {
 		this.carprice = carprice;
 	}
 	public String getCarmodel() {
