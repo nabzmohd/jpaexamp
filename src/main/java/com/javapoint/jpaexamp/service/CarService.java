@@ -71,6 +71,23 @@ public class CarService {
 		
 		
 	}
+	
+	
+	
+	
+	
+	public List<Car> getyears(int filteryr, List<Integer> findyear) {
+		switch (filteryr) {
+		case 1:
+			return carRepository.findyer(findyear);
+		default:
+			break;
+		}
+	
+		return carRepository.findAll();
+	}
+	
+	
 
 	
 	
@@ -274,6 +291,10 @@ public class CarService {
 //		response.put("deleted", Boolean.TRUE);
 		return null;
 	}
+
+
+
+
 
 
 

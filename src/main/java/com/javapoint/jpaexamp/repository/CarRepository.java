@@ -60,6 +60,11 @@ public List<Car> findAlllethan(int lesthan);
 
 
 	
+	@Query("{year:{ $in: ?0 } }")
+	public List<Car> findyer(List<Integer> findyear);
+
+
+	
 
 
 

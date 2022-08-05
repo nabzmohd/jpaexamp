@@ -80,6 +80,18 @@ public class CarController {
 	}
 	
 	
+	@GetMapping("findcaryrs")
+	public List<Car>getcaryr(@RequestParam(name = "filteryr", required = false , defaultValue = "0") int filteryr,
+			@RequestParam(name = "findyear", required = false , defaultValue = "0") List<Integer> findyear){
+		List<Car> identify = carService.getyears(filteryr,findyear);
+		return identify;
+	}
+
+	
+	
+	
+
+
 	// car price fiter lessthan,graterthan,between
 	@GetMapping("/carprice")
 	public List<Car> getcarprice(@RequestParam (name = "type" ,required = false, defaultValue = "0")int type,
